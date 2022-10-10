@@ -12,11 +12,11 @@ stopBtn.addEventListener('click', stopChangeBodyColor);
 stopBtn.setAttribute('disabled', true);
 
 function changeBodyColor() {
+  startBtn.setAttribute('disabled', true);
+  stopBtn.removeAttribute('disabled');
   bgColor = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
-  startBtn.setAttribute('disabled', true);
-  stopBtn.removeAttribute('disabled');
 }
 
 function stopChangeBodyColor() {
