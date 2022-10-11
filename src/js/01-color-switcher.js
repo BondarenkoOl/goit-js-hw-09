@@ -20,7 +20,7 @@ function changeBodyColor() {
 }
 
 function stopChangeBodyColor() {
-  clearInterval(bgColor);
   startBtn.removeAttribute('disabled');
   stopBtn.setAttribute('disabled', true);
+  clearInterval(bgColor);
 }
